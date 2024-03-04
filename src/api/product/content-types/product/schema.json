@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "Product",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Price": {
+      "type": "float",
+      "required": true
+    },
+    "QtyTotal": {
+      "type": "integer",
+      "required": true
+    },
+    "Unit": {
+      "type": "enumeration",
+      "enum": [
+        "PIECE",
+        "KILOGRAM",
+        "PACKAGE"
+      ],
+      "required": true
+    },
+    "Code": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
